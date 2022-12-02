@@ -1,9 +1,9 @@
 import functools
 
 
-def computePoints(acc, line):
-    print(line)
-    dict = {
+def computePoints(line):
+    
+    possibilitesDict = {
         'A X': 4,
         'A Y': 8,
         'A Z': 3,
@@ -14,7 +14,7 @@ def computePoints(acc, line):
         'C Y': 2,
         'C Z': 6
     }
-    return acc + dict.get(line.rstrip('\n'))
+    return possibilitesDict.get(line)
 
 def computeWinner(acc, line):
     dict = {
