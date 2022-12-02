@@ -1,6 +1,6 @@
 
 
-with open("input1") as file:
+with open("day1/input1") as file:
     Max = 0
     Current = 0
     for line in file:
